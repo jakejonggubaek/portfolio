@@ -498,6 +498,8 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
   font-size: 2.25rem;
   position: absolute;
   bottom: 10%;
+  -webkit-animation: highlight 1.2s linear infinite;
+          animation: highlight 1.2s linear infinite;
 }
 
 .landing .fa-chevron-down:hover, .landing .fa-chevron-down:focus {
@@ -505,6 +507,22 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
   color: #d00a2b;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+@-webkit-keyframes highlight {
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes highlight {
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
 }
 
 .intro {
