@@ -26,6 +26,10 @@ h1 {
     @include tabletMQ {
         font-size: $large;
     } 
+
+    @include mobileMQ {
+        font-size: $small;
+    }
 }
 
 h2 {
@@ -33,6 +37,14 @@ h2 {
 
     @include tabletMQ {
         font-size: $medium;
+    }
+}
+
+h3 {
+    @include mobileMQ {
+        padding: 0;
+        margin: 0;
+        font-size: $small;
     }
 }
 
@@ -73,6 +85,10 @@ header {
             width: 20%;
             font-size: $large;
 
+            @include smallTabletMQ {
+                width: 10%;
+            }
+
             span {
                 color: $red;
             }
@@ -89,6 +105,11 @@ header {
 
                     @include tabletMQ {
                         padding: 15px;
+                    }
+
+                    @include smallTabletMQ {
+                        padding: 8px;
+                        font-size: $x-small;
                     }
                 }
 
@@ -248,16 +269,30 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
         align-items: center;
         justify-content: center;
 
+        @include mobileMQ {
+            flex-direction: column;
+        }
+
         .image-container {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 40%;
 
+            @include mobileMQ {
+                width: 100%;
+            }
+
            .profile-image {
                 width: 150px;
                 height: 172px;
                 margin: 8px;
+
+                @include smallTabletMQ {
+                    width: 100px;
+                    height: 115px;
+                    margin: 6px;
+                }
            }
 
             .samsung:hover, .flight-centre:hover{
@@ -273,6 +308,12 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
                     width: 150px;
                     height: 150px;
                     margin: 8px;
+
+                    @include smallTabletMQ {
+                        width: 100px;
+                        height: 100px;
+                        margin: 6px;
+                    }
                 }
             }
         }
@@ -283,21 +324,35 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
             align-items: center;
             width: 60%;
 
+            @include mobileMQ {
+                width: 100%;
+                order: -1;
+            }
+
+            h1 {
+                @include mobileMQ {
+                    font-size: $small-medium;
+                }
+            }
+
             p {
                 text-align: center;
                 line-height: 1.5rem;
+                padding: 0 10px;
 
                 strong {
                     font-weight: bold;
                     
+                }
+
+                @include mobileMQ {
+                    font-size: $x-small;
                 }
             }
 
             span {
                 color: $red;
             }
-
-
         }
     }
 }
@@ -309,8 +364,17 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
     align-items: center;
     background: linear-gradient(to right,  $black 0%, $black 71%,$white 71%,$white 100%);
 
+    @include mobileMQ {
+        background: linear-gradient(to bottom,  $black 0%, $black 45%,$white 45%,$white 100%);
+    }
+
     &>div {
         display: flex;
+
+        @include mobileMQ {
+            flex-direction: column;
+            height: 100%;
+        }
 
         .ability {
             display: flex;
@@ -318,6 +382,11 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
             justify-content: center;
             align-items: center;
             width: calc(75vw - 5%);
+
+            @include mobileMQ {
+                width: 100%;
+                height: 45%;
+            }
 
             h1 {
                 color: $white;
@@ -334,9 +403,20 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
             display: flex;
             flex-direction: column;
 
-             &>div {
+            @include mobileMQ {
+                 width: 100%;
+            }
+
+             .img-symbols {
                  display: flex;
-                 justify-content: space-around;
+                 flex-wrap: wrap;
+                 justify-content: center;
+
+                .last-child-symbol {
+                    @include mobileMQ {
+                        display: none;
+                    }
+                }
 
                 &>div{
                     display: flex;
@@ -350,16 +430,29 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
                     border: 2px solid $white;
                     margin: 10px;
 
-                        @include tabletMQ {
-                            width: 60px;
-                            height: 75px;
-                            margin: 5px;
-                        }
+                    @include tabletMQ {
+                        font-size: $x-small;
+                        width: 60px;
+                        height: 75px;
+                        margin: 5px;
+                    }
+
+                    @include mobileMQ {
+                        width: 55px;
+                        height: 65px;
+                        margin: 2px;
+                    }
 
                     &:hover, &>:focus {
                         color: $red;
                         border: 2px solid $red;
                         transform: scale(1.1);
+                    }
+
+                    &>div {
+                        width: 55px;
+                        height: 55px;
+                        z-index: 2;
                     }
                 }
 
@@ -373,23 +466,6 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
 
                 span {
                     font-size: $x-small;
-                }
-            }
-
-            .img-symbols {
-
-            
-                &>div {
-
-                    @include tabletMQ {
-                        font-size: $x-small;
-                    }
-
-                    &>div {
-                        width: 55px;
-                        height: 55px;
-                        z-index: 2;
-                    }
                 }
 
                 .jquery-symbol {
@@ -470,8 +546,11 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
                         background: url(../../assets/group-red.png);
                         background-size: cover;
                     }
-                }
 
+                    @include mobileMQ {
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -482,12 +561,29 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
         flex-direction: column;
         align-items: flex-end;
 
+        @include mobileMQ {
+            width: 100%;
+            height: 55%;
+        }
+
         h2 {
             text-decoration: 5px underline $red;
+
+            @include smallTabletMQ {
+                font-size: $small;
+            }
         }
 
         li {
             margin-bottom: 35px;
+
+            @include smallTabletMQ {
+                margin-bottom: 20px;
+            }
+
+            @include mobileMQ {
+                margin-bottom: 5px;
+            }
 
             h3 {
                 text-align: end;
@@ -495,6 +591,10 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
 
             p {
                 text-align: end;
+
+                @include mobileMQ {
+                    font-size: $x-small;
+                }
             }
 
             span {
@@ -523,6 +623,10 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
         display: flex;
         align-items: center;
 
+        @include smallTabletMQ {
+            flex-direction: column;
+        }
+
         h1 {
             width: 30%;
             padding: 10px;
@@ -534,6 +638,11 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
             @include tabletMQ {
                 width: 25%;
                 text-align: center;
+            }
+
+            @include smallTabletMQ {
+                font-size: $medium;
+                order: -1;
             }
         }
 
@@ -566,6 +675,10 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
 
             @include tabletMQ {
                 width: 75%;
+            }
+
+            @include smallTabletMQ {
+                width: 90%;
             }
 
             .project-detail-up, .project-detail-down {
@@ -653,6 +766,11 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
             cursor: pointer;
             color: $red;
         }
+
+        @include smallTabletMQ {
+            width: 60px;
+            height: 30px;
+        }
     }
 
     .git-repo {
@@ -666,6 +784,11 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
             cursor: pointer;
             color: $red;
             border: 3px solid $red;
+        }
+
+         @include smallTabletMQ {
+            width: 60px;
+            height: 30px;
         }
     }
 
@@ -684,12 +807,20 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
     &>div {
         display: flex;
         align-items: center;
+
+        @include mobileMQ {
+            flex-direction: column;
+        }
     }
 
     .content-container {
         width: 30%;
         color: $white;
         padding: 0 10px;
+
+        @include mobileMQ {
+            width: 100%;
+        }
             
         ul {
             display: flex;
@@ -711,6 +842,10 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
         width: 70%;
         padding: 0 10%;
         flex-direction: column;
+
+        @include mobileMQ {
+            width: 100%;
+        }
 
         .name, .email {
             height: 40px;
