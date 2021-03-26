@@ -1326,7 +1326,7 @@ section:nth-child(6) {
   color: #d00a2b;
 }
 
-.projects > div .projects-container .cam:hover, .projects > div .projects-container .fern:hover, .projects > div .projects-container .mel:hover {
+.projects > div .projects-container .cam:hover, .projects > div .projects-container .fern:hover, .projects > div .projects-container .mel:hover, .projects > div .projects-container .jess:hover {
   cursor: pointer;
   color: black;
 }
