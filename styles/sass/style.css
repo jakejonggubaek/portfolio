@@ -289,6 +289,12 @@ h2 {
 }
 
 @media (max-width: 600px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
   h3 {
     padding: 0;
     margin: 0;
@@ -364,6 +370,12 @@ header .main-header .logo span {
 
 header .main-header nav {
   width: 80%;
+}
+
+@media (max-width: 600px) {
+  header .main-header nav {
+    display: none;
+  }
 }
 
 header .main-header nav ul {
@@ -460,6 +472,12 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
           transform: scale(1.5);
 }
 
+@media (max-width: 600px) {
+  .fa-chevron-down {
+    display: none;
+  }
+}
+
 @-webkit-keyframes highlight {
   100% {
     -webkit-transform: scale(1.5);
@@ -506,6 +524,12 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+}
+
+@media (max-width: 600px) {
+  .landing .landing-details h1 {
+    font-size: 2rem;
+  }
 }
 
 .landing .landing-details h1, .landing .landing-details h2 {
@@ -561,6 +585,13 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
   border-radius: 50%;
 }
 
+@media (max-width: 600px) {
+  .landing .image-container-border {
+    width: 45vw;
+    height: 45vw;
+  }
+}
+
 .landing .image-container-border .image-container {
   background-image: url(../../assets/test.png);
   background-size: cover;
@@ -568,6 +599,13 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
   width: 23vw;
   height: 23vw;
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .landing .image-container-border .image-container {
+    width: 40vw;
+    height: 40vw;
+  }
 }
 
 .intro {
@@ -1101,6 +1139,12 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
   }
 }
 
+@media (max-width: 600px) {
+  .projects > div h1 {
+    font-size: 1rem;
+  }
+}
+
 .projects > div h2 {
   font-size: 2rem;
   margin-top: 0;
@@ -1110,6 +1154,12 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
   .projects > div h2 {
     font-size: 1.25rem;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects > div h2 {
+    font-size: 1rem;
   }
 }
 
@@ -1153,6 +1203,13 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
   }
 }
 
+@media (max-width: 600px) {
+  .projects > div .projects-container {
+    padding: 5px;
+    height: 70%;
+  }
+}
+
 .projects > div .projects-container .project-detail-up, .projects > div .projects-container .project-detail-down {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1166,11 +1223,25 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
 .projects > div .projects-container .project-detail-up .description, .projects > div .projects-container .project-detail-down .description {
   width: calc(100% - 330px);
   padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 1200px) {
   .projects > div .projects-container .project-detail-up .description, .projects > div .projects-container .project-detail-down .description {
     width: calc(100% - 250px);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects > div .projects-container .project-detail-up .description, .projects > div .projects-container .project-detail-down .description {
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -1226,6 +1297,12 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
 @media (max-width: 1200px) {
   .projects > div .projects-container .image-container {
     height: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects > div .projects-container .image-container {
+    display: none;
   }
 }
 
@@ -1324,7 +1401,7 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
 
 @media (max-width: 600px) {
   .contact .content-container {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -1358,7 +1435,7 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
 
 @media (max-width: 600px) {
   .contact form {
-    width: 100%;
+    width: 90%;
   }
 }
 

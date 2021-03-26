@@ -38,6 +38,10 @@ h2 {
     @include tabletMQ {
         font-size: $medium;
     }
+
+    @include mobileMQ {
+        font-size: $small;
+    }
 }
 
 h3 {
@@ -96,6 +100,10 @@ header {
 
         nav {
             width: 80%;
+
+            @include mobileMQ {
+                display: none;
+            }
 
             ul {
                 display: flex;
@@ -179,6 +187,10 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
         color: $red;
         transform: scale(1.5);
     }
+
+    @include mobileMQ {
+        display: none;
+    }
 }
 
 @keyframes highlight {
@@ -205,6 +217,12 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
         display: flex;
         flex-direction: column;
         justify-content: right;
+
+        h1 {
+            @include mobileMQ {
+                font-size: $medium;
+            }
+        }
 
         h1, h2 {
             text-align: end;
@@ -247,6 +265,11 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
         border: 2px solid white;
         border-radius: 50%;
 
+        @include mobileMQ {
+            width: 45vw;
+            height: 45vw;
+        }
+
         .image-container {
             background-image: url(../../assets/test.png);
             background-size: cover;
@@ -254,6 +277,11 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
             width: 23vw;
             height: 23vw;
             border-radius: 50%; 
+
+            @include mobileMQ {
+                width: 40vw;
+                height: 40vw;
+            }
         }
     }
 }
@@ -644,6 +672,10 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
                 font-size: $medium;
                 order: -1;
             }
+
+            @include mobileMQ {
+                font-size: $small;
+            }
         }
 
         h2 {
@@ -653,6 +685,10 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
             @include tabletMQ {
                 font-size: $small-medium;
                 margin-bottom: 10px;
+            }
+
+            @include mobileMQ {
+                font-size: $small;
             }
         }
         
@@ -681,6 +717,11 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
                 width: 90%;
             }
 
+            @include mobileMQ {
+                padding: 5px;
+                height: 70%;
+            }
+
             .project-detail-up, .project-detail-down {
                 display: flex;
                 width: 100%;
@@ -691,9 +732,16 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
                 .description {
                     width: calc(100% - 330px);
                     padding:0 20px;
+                    display: flex;
+                    flex-direction: column;
 
                     @include tabletMQ {
                         width: calc(100% - 250px);
+                    }
+
+                    @include mobileMQ {
+                        width: 100%;
+                        margin: 0;
                     }
 
                     ul {
@@ -740,6 +788,10 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
 
                 @include tabletMQ {
                     height: 80%;
+                }
+
+                @include mobileMQ {
+                    display: none;
                 }
             }
 
@@ -819,7 +871,7 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
         padding: 0 10px;
 
         @include mobileMQ {
-            width: 100%;
+            width: 90%;
         }
             
         ul {
@@ -844,7 +896,7 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
         flex-direction: column;
 
         @include mobileMQ {
-            width: 100%;
+            width: 90%;
         }
 
         .name, .email {
