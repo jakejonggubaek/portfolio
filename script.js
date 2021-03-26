@@ -90,5 +90,6 @@ gitLink[3].addEventListener('click', () => {
 });
 
 msgSubmit.addEventListener('submit', (e)=> {
-    e.preventDefault();
+    e.preventDefault(); 
+    intro.scrollIntoView({ behavior: "smooth" });
 });
