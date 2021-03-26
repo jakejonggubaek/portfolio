@@ -171,9 +171,13 @@ header {
 }
 
 //each section takes one screen size
-section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-child(5), section:nth-child(6) {
+section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-child(5) {
     width: 100%;
     height: 100vh;
+}
+
+section:nth-child(6) {
+    height: calc(100vh - 30px);
 }
 
 .fa-chevron-down {
@@ -935,4 +939,10 @@ section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-ch
         }
     }
 }
-
+footer {
+    background-color: $black;
+    height: 30px;
+    color: $white;
+    font-size: $x-small;
+    text-align: center;
+}
