@@ -1,13 +1,17 @@
 const intro = document.querySelector('.intro');
-const arrowButton = document.querySelector('.fa-chevron-down');
+const skillsPage = document.querySelector('.skills');
+const projectsPage = document.querySelectorAll('.projects');
+const contactPage = document.querySelector('.contact');
+const arrowButton = document.querySelectorAll('.fa-chevron-down');
 const liveViewLinks = document.querySelectorAll('.live-view');
 const gitLink = document.querySelectorAll('.git-repo');
 const camLink = document.querySelector('.cam');
 const fernLink = document.querySelector('.fern');
 const melLink = document.querySelector('.mel');
-const samsungLink = document.querySelector('.samsung')
-const fcLink = document.querySelector('.flight-centre')
-const resumeLink = document.querySelector('.resume')
+const samsungLink = document.querySelector('.samsung');
+const fcLink = document.querySelector('.flight-centre');
+const resumeLink = document.querySelector('.resume');
+const msgSubmit = document.querySelector('.message-send');
 
 resumeLink.addEventListener('click', () => {
     window.location.href = './assets/Resume-JongguJakeBaek.pdf';
@@ -21,8 +25,24 @@ fcLink.addEventListener('click', () => {
     window.location.href = 'https://www.flightcentre.ca/destination/canada';
 });
 
-arrowButton.addEventListener('click', () => {
-    intro.scrollIntoView();
+arrowButton[0].addEventListener('click', () => {
+    intro.scrollIntoView({ behavior: "smooth" });
+});
+
+arrowButton[1].addEventListener('click', () => {
+    skillsPage.scrollIntoView({ behavior: "smooth" });
+});
+
+arrowButton[2].addEventListener('click', () => {
+    projectsPage[0].scrollIntoView({ behavior: "smooth" });
+});
+
+arrowButton[3].addEventListener('click', () => {
+    projectsPage[1].scrollIntoView({ behavior: "smooth" });
+});
+
+arrowButton[4].addEventListener('click', () => {
+    contactPage.scrollIntoView({ behavior: "smooth" });
 });
 
 liveViewLinks[0].addEventListener('click', () => {
@@ -67,4 +87,8 @@ liveViewLinks[3].addEventListener('click', () => {
 
 gitLink[3].addEventListener('click', () => {
     window.location.href = 'https://github.com/Amy-Jake/first-project';
+});
+
+msgSubmit.addEventListener('submit', (e)=> {
+    e.preventDefault();
 });
