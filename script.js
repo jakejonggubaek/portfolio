@@ -8,6 +8,7 @@ const gitLink = document.querySelectorAll('.git-repo');
 const camLink = document.querySelector('.cam');
 const fernLink = document.querySelector('.fern');
 const melLink = document.querySelector('.mel');
+const jessLink = document.querySelector('.jess');
 const samsungLink = document.querySelector('.samsung');
 const fcLink = document.querySelector('.flight-centre');
 const resumeLink = document.querySelector('.resume');
@@ -63,6 +64,10 @@ fernLink.addEventListener('click', () => {
 
 melLink.addEventListener('click', () => {
     window.location.href = 'https://melissalocquiao.com';
+});
+
+jessLink.addEventListener('click', () => {
+    window.location.href = 'https://jessonthenet.com';
 });
 
 liveViewLinks[1].addEventListener('click', () => {
