@@ -7,6 +7,11 @@ const fernLink = document.querySelector('.fern');
 const melLink = document.querySelector('.mel');
 const samsungLink = document.querySelector('.samsung')
 const fcLink = document.querySelector('.flight-centre')
+const resumeLink = document.querySelector('.resume')
+
+resumeLink.addEventListener('click', () => {
+    window.location.href = './assets/Resume-JongguJakeBaek.pdf';
+});
 
 samsungLink.addEventListener('click', () => {
     window.location.href = 'https://www.samsungsds.com/en/company/overview/about_comp_over.html';

@@ -118,18 +118,6 @@ header {
             background-color: $red;
             border: none;
 
-            a {
-                text-decoration: none;
-
-                &:visited {
-                    color: $white;
-                }
-
-                &:hover, &:focus {
-                    color: $red;
-                }
-            }
-
             &:hover, &:focus {
                 cursor: pointer;
                 color: $red;

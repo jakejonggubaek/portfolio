@@ -388,18 +388,6 @@ header .sub-header button {
   border: none;
 }
 
-header .sub-header button a {
-  text-decoration: none;
-}
-
-header .sub-header button a:visited {
-  color: white;
-}
-
-header .sub-header button a:hover, header .sub-header button a:focus {
-  color: #d00a2b;
-}
-
 header .sub-header button:hover, header .sub-header button:focus {
   cursor: pointer;
   color: #d00a2b;
