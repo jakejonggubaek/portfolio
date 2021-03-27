@@ -1484,6 +1484,10 @@ section:nth-child(6) {
   background-color: white;
 }
 
+.contact form p {
+  color: white;
+}
+
 footer {
   background-color: black;
   height: 30px;

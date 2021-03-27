@@ -13,6 +13,7 @@ const samsungLink = document.querySelector('.samsung');
 const fcLink = document.querySelector('.flight-centre');
 const resumeLink = document.querySelector('.resume');
 const msgSubmit = document.querySelector('.message-send');
+const form = document.getElementById("my-form");
 
 resumeLink.addEventListener('click', () => {
     window.location.href = './assets/Resume-JongguJakeBaek.pdf';
@@ -98,3 +99,23 @@ msgSubmit.addEventListener('submit', (e)=> {
     e.preventDefault(); 
     intro.scrollIntoView({ behavior: "smooth" });
 });
+
+
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        alert("Thanks for sending me a message!");
+        form.reset()
+    }).catch(error => {
+        alert("Message was not sent properly. Please submit your message again :)");
+    });
+}
+form.addEventListener("submit", handleSubmit)
