@@ -12,7 +12,6 @@ const jessLink = document.querySelector('.jess');
 const samsungLink = document.querySelector('.samsung');
 const fcLink = document.querySelector('.flight-centre');
 const resumeLink = document.querySelector('.resume');
-const msgSubmit = document.querySelector('.message-send');
 const form = document.getElementById("my-form");
 
 resumeLink.addEventListener('click', () => {
@@ -94,13 +93,6 @@ liveViewLinks[3].addEventListener('click', () => {
 gitLink[3].addEventListener('click', () => {
     window.location.href = 'https://github.com/Amy-Jake/first-project';
 });
-
-msgSubmit.addEventListener('submit', (e)=> {
-    e.preventDefault(); 
-    intro.scrollIntoView({ behavior: "smooth" });
-});
-
-
 
 async function handleSubmit(event) {
     event.preventDefault();
