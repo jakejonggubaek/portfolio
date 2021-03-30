@@ -1322,6 +1322,11 @@ section:nth-child(6) {
   }
 }
 
+.projects > div .projects-container .image-container:hover, .projects > div .projects-container .image-container:focus {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .projects > div .projects-container span {
   color: #d00a2b;
 }

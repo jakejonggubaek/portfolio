@@ -13,6 +13,10 @@ const samsungLink = document.querySelector('.samsung');
 const fcLink = document.querySelector('.flight-centre');
 const resumeLink = document.querySelector('.resume');
 const form = document.getElementById("my-form");
+const p1Link = document.querySelector('.popsipoll');
+const p2Link = document.querySelector('.what-to-cook');
+const p3Link = document.querySelector('.travel-survey');
+const p4Link = document.querySelector('.boat-ride');
 
 resumeLink.addEventListener('click', () => {
     window.location.href = './assets/Resume-JongguJakeBaek.pdf';
@@ -46,6 +50,10 @@ arrowButton[4].addEventListener('click', () => {
     contactPage.scrollIntoView({ behavior: "smooth" });
 });
 
+p1Link.addEventListener('click', () => {
+    window.location.href = 'https://popsipoll-project.netlify.app/';
+});
+
 liveViewLinks[0].addEventListener('click', () => {
     window.location.href = 'https://popsipoll-project.netlify.app/';
 });
@@ -70,6 +78,10 @@ jessLink.addEventListener('click', () => {
     window.location.href = 'https://jessonthenet.com';
 });
 
+p2Link.addEventListener('click', () => {
+    window.location.href = 'https://donno-what-to-cook.netlify.app/';
+});
+
 liveViewLinks[1].addEventListener('click', () => {
     window.location.href = 'https://donno-what-to-cook.netlify.app/';
 });
@@ -78,12 +90,20 @@ gitLink[1].addEventListener('click', () => {
     window.location.href = 'https://github.com/Jess-Jake/project2';
 });
 
+p3Link.addEventListener('click', () => {
+    window.location.href = 'https://travel-survey.netlify.app/';
+});
+
 liveViewLinks[2].addEventListener('click', () => {
     window.location.href = 'https://travel-survey.netlify.app/';
 });
 
 gitLink[2].addEventListener('click', () => {
     window.location.href = 'https://github.com/jakejonggubaek/travel-survey-app-project3';
+});
+
+p4Link.addEventListener('click', () => {
+    window.location.href = 'https://amy-jake.github.io/first-project/';
 });
 
 liveViewLinks[3].addEventListener('click', () => {

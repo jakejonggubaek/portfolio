@@ -806,6 +806,11 @@ section:nth-child(6) {
                 @include mobileMQ {
                     display: none;
                 }
+
+                &:hover, &:focus {
+                    cursor: pointer;
+                    opacity: 0.5;
+                }
             }
 
             span {
