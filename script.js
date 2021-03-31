@@ -20,7 +20,7 @@ const p4Link = document.querySelector('.boat-ride');
 
 
 resumeLink.addEventListener('click', () => {
-    window.location.href = './assets/Resume-JongguJakeBaek.pdf';
+    window.location.href = './assets/Resume_JongguJakeBaek.pdf';
 });
 
 samsungLink.addEventListener('click', () => {
