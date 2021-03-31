@@ -18,6 +18,7 @@ const p2Link = document.querySelector('.what-to-cook');
 const p3Link = document.querySelector('.travel-survey');
 const p4Link = document.querySelector('.boat-ride');
 
+
 resumeLink.addEventListener('click', () => {
     window.location.href = './assets/Resume-JongguJakeBaek.pdf';
 });
