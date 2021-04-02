@@ -501,84 +501,84 @@ section:nth-child(6) {
                     font-size: $x-small;
                 }
 
+                .symbol-container1:hover .jquery-symbol, .symbol-container1:focus .jquery-symbol {
+                    background: url(../../assets/jquery-red.png);
+                    background-size: cover;
+                }
+
                 .jquery-symbol {
                     background: url(../../assets/jquery.png);
                     background-size: cover;
+                }
 
-                    &:hover, &:focus {
-                        background: url(../../assets/jquery-red.png);
-                        background-size: cover;
-                    }
+                .symbol-container2:hover .firebase-symbol, .symbol-container2:focus .firebase-symbol {
+                    background: url(../../assets/firebase-red.png);
+                    background-size: cover;
                 }
                             
                 .firebase-symbol {
                     background: url(../../assets/firebase.png);
                     background-size: cover;
+                }
 
-                    &:hover, &:focus {
-                        background: url(../../assets/firebase-red.png);
+                .symbol-container3:hover .api-symbol, .symbol-container3:focus .api-symbol {
+                    background: url(../../assets/api-red.png);
                         background-size: cover;
-                    }
                 }
                 
                 .api-symbol {
                     background: url(../../assets/api.png);
                     background-size: cover;
+                }
 
-                    &:hover, &:focus {
-                        background: url(../../assets/api-red.png);
-                        background-size: cover;
-                    }
+                .symbol-container4:hover .nodejs-symbol, .symbol-container4:focus .nodejs-symbol {
+                    background: url(../../assets/node-red.png);
+                    background-size: cover;
                 }
                 
                 .nodejs-symbol {
                     background: url(../../assets/node.png);
                     background-size: cover;
+                }
 
-                    &:hover, &:focus {
-                        background: url(../../assets/node-red.png);
+                .symbol-container5:hover .res-symbol, .symbol-container5:focus .res-symbol {
+                    background: url(../../assets/responsive-red.png);
                         background-size: cover;
-                    }
                 }
                 
                 .res-symbol {
                     background: url(../../assets/responsive.png);
                     background-size: cover;
+                }
 
-                    &:hover, &:focus {
-                        background: url(../../assets/responsive-red.png);
-                        background-size: cover;
-                    }
+                .symbol-container6:hover .acc-symbol, .symbol-container6:focus .acc-symbol {
+                    background: url(../../assets/accessibility-red.png);
+                    background-size: cover;
                 }
                 
                 .acc-symbol {
                     background: url(../../assets/accessibility.png);
                     background-size: cover;
+                }
 
-                    &:hover, &:focus {
-                        background: url(../../assets/accessibility-red.png);
-                        background-size: cover;
-                    }
+                .symbol-container7:hover .agile-symbol, .symbol-container7:focus .agile-symbol {
+                    background: url(../../assets/agile-red.png);
+                    background-size: cover;
                 }
                 
                 .agile-symbol {
                     background: url(../../assets/agile.png);
                     background-size: cover;
+                }
 
-                    &:hover, &:focus {
-                        background: url(../../assets/agile-red.png);
-                        background-size: cover;
-                    }
+                .symbol-container8:hover .team-symbol, .symbol-container8:focus .team-symbol {
+                    background: url(../../assets/group-red.png);
+                    background-size: cover;
                 }
                 
                 .team-symbol {
                     background: url(../../assets/group.png);
                     background-size: cover;
-                    
-                    &:hover, &:focus {
-                        background: url(../../assets/group-red.png);
-                        background-size: cover;
-                    }
 
                     @include mobileMQ {
                         display: none;

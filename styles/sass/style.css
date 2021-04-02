@@ -927,13 +927,18 @@ section:nth-child(6) {
   font-size: 0.75rem;
 }
 
+.skills > div .symbols .img-symbols .symbol-container1:hover .jquery-symbol, .skills > div .symbols .img-symbols .symbol-container1:focus .jquery-symbol {
+  background: url(../../assets/jquery-red.png);
+  background-size: cover;
+}
+
 .skills > div .symbols .img-symbols .jquery-symbol {
   background: url(../../assets/jquery.png);
   background-size: cover;
 }
 
-.skills > div .symbols .img-symbols .jquery-symbol:hover, .skills > div .symbols .img-symbols .jquery-symbol:focus {
-  background: url(../../assets/jquery-red.png);
+.skills > div .symbols .img-symbols .symbol-container2:hover .firebase-symbol, .skills > div .symbols .img-symbols .symbol-container2:focus .firebase-symbol {
+  background: url(../../assets/firebase-red.png);
   background-size: cover;
 }
 
@@ -942,8 +947,8 @@ section:nth-child(6) {
   background-size: cover;
 }
 
-.skills > div .symbols .img-symbols .firebase-symbol:hover, .skills > div .symbols .img-symbols .firebase-symbol:focus {
-  background: url(../../assets/firebase-red.png);
+.skills > div .symbols .img-symbols .symbol-container3:hover .api-symbol, .skills > div .symbols .img-symbols .symbol-container3:focus .api-symbol {
+  background: url(../../assets/api-red.png);
   background-size: cover;
 }
 
@@ -952,8 +957,8 @@ section:nth-child(6) {
   background-size: cover;
 }
 
-.skills > div .symbols .img-symbols .api-symbol:hover, .skills > div .symbols .img-symbols .api-symbol:focus {
-  background: url(../../assets/api-red.png);
+.skills > div .symbols .img-symbols .symbol-container4:hover .nodejs-symbol, .skills > div .symbols .img-symbols .symbol-container4:focus .nodejs-symbol {
+  background: url(../../assets/node-red.png);
   background-size: cover;
 }
 
@@ -962,8 +967,8 @@ section:nth-child(6) {
   background-size: cover;
 }
 
-.skills > div .symbols .img-symbols .nodejs-symbol:hover, .skills > div .symbols .img-symbols .nodejs-symbol:focus {
-  background: url(../../assets/node-red.png);
+.skills > div .symbols .img-symbols .symbol-container5:hover .res-symbol, .skills > div .symbols .img-symbols .symbol-container5:focus .res-symbol {
+  background: url(../../assets/responsive-red.png);
   background-size: cover;
 }
 
@@ -972,8 +977,8 @@ section:nth-child(6) {
   background-size: cover;
 }
 
-.skills > div .symbols .img-symbols .res-symbol:hover, .skills > div .symbols .img-symbols .res-symbol:focus {
-  background: url(../../assets/responsive-red.png);
+.skills > div .symbols .img-symbols .symbol-container6:hover .acc-symbol, .skills > div .symbols .img-symbols .symbol-container6:focus .acc-symbol {
+  background: url(../../assets/accessibility-red.png);
   background-size: cover;
 }
 
@@ -982,8 +987,8 @@ section:nth-child(6) {
   background-size: cover;
 }
 
-.skills > div .symbols .img-symbols .acc-symbol:hover, .skills > div .symbols .img-symbols .acc-symbol:focus {
-  background: url(../../assets/accessibility-red.png);
+.skills > div .symbols .img-symbols .symbol-container7:hover .agile-symbol, .skills > div .symbols .img-symbols .symbol-container7:focus .agile-symbol {
+  background: url(../../assets/agile-red.png);
   background-size: cover;
 }
 
@@ -992,18 +997,13 @@ section:nth-child(6) {
   background-size: cover;
 }
 
-.skills > div .symbols .img-symbols .agile-symbol:hover, .skills > div .symbols .img-symbols .agile-symbol:focus {
-  background: url(../../assets/agile-red.png);
+.skills > div .symbols .img-symbols .symbol-container8:hover .team-symbol, .skills > div .symbols .img-symbols .symbol-container8:focus .team-symbol {
+  background: url(../../assets/group-red.png);
   background-size: cover;
 }
 
 .skills > div .symbols .img-symbols .team-symbol {
   background: url(../../assets/group.png);
-  background-size: cover;
-}
-
-.skills > div .symbols .img-symbols .team-symbol:hover, .skills > div .symbols .img-symbols .team-symbol:focus {
-  background: url(../../assets/group-red.png);
   background-size: cover;
 }
 
