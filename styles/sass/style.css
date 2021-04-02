@@ -1305,8 +1305,6 @@ section:nth-child(6) {
 .projects > div .projects-container .image-container {
   width: 330px;
   height: 200px;
-  -webkit-box-shadow: 4px 4px black;
-          box-shadow: 4px 4px black;
 }
 
 @media (max-width: 1200px) {
@@ -1339,6 +1337,7 @@ section:nth-child(6) {
 .projects .live-view {
   width: 100px;
   height: 50px;
+  margin-right: 20px;
   background-color: black;
   font-size: medium;
   color: white;
