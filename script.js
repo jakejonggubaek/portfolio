@@ -1,4 +1,4 @@
-const intro = document.querySelector('.intro');
+const intro = document.querySelector('.intro'); 
 const skillsPage = document.querySelector('.skills');
 const projectsPage = document.querySelectorAll('.projects');
 const contactPage = document.querySelector('.contact');
@@ -17,7 +17,6 @@ const p1Link = document.querySelector('.popsipoll');
 const p2Link = document.querySelector('.what-to-cook');
 const p3Link = document.querySelector('.travel-survey');
 const p4Link = document.querySelector('.boat-ride');
-
 
 resumeLink.addEventListener('click', () => {
     window.location.href = './assets/Resume_JongguJakeBaek.pdf';
