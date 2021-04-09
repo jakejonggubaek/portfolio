@@ -18,8 +18,27 @@ const p1Link = document.querySelector('.popsipoll');
 const p2Link = document.querySelector('.what-to-cook');
 const p3Link = document.querySelector('.travel-survey');
 const p4Link = document.querySelector('.boat-ride');
+const body = document.querySelector('body');
+const topButton = document.querySelector('.topBtn');
 
+//loading page
 setTimeout(() => { loading.style.display = 'none'}, 2000);
+
+const screenScroll = () => {
+
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        topButton.style.display = "block";
+    } else {
+        topButton.style.display = "none";
+    }
+}
+
+body.addEventListener("scroll", screenScroll);
+
+topButton.addEventListener('click', () => {
+    document.body.scrollTo({ top: 0, behavior: 'smooth' }); // For Safari
+    document.documentElement.scrollTo({ top: 0, behavior: 'smooth' }); // For Chrome, Firefox, IE and Opera
+});
 
 resumeLink.addEventListener('click', () => {
     window.location.href = './assets/Resume_JongguJakeBaek.pdf';
