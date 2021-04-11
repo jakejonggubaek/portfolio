@@ -125,7 +125,7 @@ gitLink[2].addEventListener('click', () => {
 });
 
 p4Link.addEventListener('click', () => {
-    window.location.href = 'https://amy-jake.github.io/first-project/';
+    window.location.href = 'https://team-to-do-manager.netlify.app/';
 });
 
 liveViewLinks[3].addEventListener('click', () => {
