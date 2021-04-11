@@ -41,7 +41,7 @@ topButton.addEventListener('click', () => {
 });
 
 resumeLink.addEventListener('click', () => {
-    window.location.href = './assets/Resume_JongguJakeBaek.pdf';
+    window.location.href = './assets/RESUME_JONGGU_JAKE_BAEK.pdf';
 });
 
 samsungLink.addEventListener('click', () => {
@@ -129,11 +129,11 @@ p4Link.addEventListener('click', () => {
 });
 
 liveViewLinks[3].addEventListener('click', () => {
-    window.location.href = 'https://amy-jake.github.io/first-project/';
+    window.location.href = 'https://team-to-do-manager.netlify.app/';
 });
 
 gitLink[3].addEventListener('click', () => {
-    window.location.href = 'https://github.com/Amy-Jake/first-project';
+    window.location.href = 'https://github.com/jakejonggubaek/to-do-list-for-group-app-server';
 });
 
 async function handleSubmit(event) {
