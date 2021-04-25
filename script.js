@@ -4,7 +4,7 @@ const skillsPage = document.querySelector('.skills');
 const projectsPage = document.querySelectorAll('.projects');
 const contactPage = document.querySelector('.contact');
 const arrowButton = document.querySelectorAll('.fa-chevron-down');
-const liveViewLinks = document.querySelectorAll('.live-view');
+const liveViewLinks = document.querySelectorAll('.live-link');
 const gitLink = document.querySelectorAll('.git-repo');
 const camLink = document.querySelector('.cam');
 const fernLink = document.querySelector('.fern');
@@ -14,12 +14,11 @@ const samsungLink = document.querySelector('.samsung');
 const fcLink = document.querySelector('.flight-centre');
 const resumeLink = document.querySelector('.resume');
 const form = document.getElementById("my-form");
-const p1Link = document.querySelector('.popsipoll');
-const p2Link = document.querySelector('.what-to-cook');
-const p3Link = document.querySelector('.travel-survey');
-const p4Link = document.querySelector('.boat-ride');
 const body = document.querySelector('body');
 const topButton = document.querySelector('.topBtn');
+const projectBrief= document.querySelectorAll('.project-brief');
+const projectDetail = document.querySelectorAll('.project-detail');
+const progectDetailClose = document.querySelectorAll('.close');
 
 //loading page
 setTimeout(() => { loading.style.display = 'none'}, 2000);
@@ -35,23 +34,25 @@ const screenScroll = () => {
 
 body.addEventListener("scroll", screenScroll);
 
+//scroll to top button - to landing page
 topButton.addEventListener('click', () => {
     document.body.scrollTo({ top: 0, behavior: 'smooth' }); // For Safari
     document.documentElement.scrollTo({ top: 0, behavior: 'smooth' }); // For Chrome, Firefox, IE and Opera
 });
 
 resumeLink.addEventListener('click', () => {
-    window.location.href = './assets/RESUME_JONGGU_JAKE_BAEK.pdf';
+    window.open('./assets/RESUME_JONGGU_JAKE_BAEK.pdf');
 });
 
 samsungLink.addEventListener('click', () => {
-    window.location.href = 'https://www.samsungsds.com/en/company/overview/about_comp_over.html';
+    window.open('https://www.samsungsds.com/en/company/overview/about_comp_over.html');
 });
 
 fcLink.addEventListener('click', () => {
-    window.location.href = 'https://www.flightcentre.ca/destination/canada';
+    window.open('https://www.flightcentre.ca/destination/canada');
 });
 
+//arrow button to scroll down
 arrowButton[0].addEventListener('click', () => {
     intro.scrollIntoView({ behavior: "smooth" });
 });
@@ -64,77 +65,84 @@ arrowButton[2].addEventListener('click', () => {
     projectsPage[0].scrollIntoView({ behavior: "smooth" });
 });
 
-arrowButton[3].addEventListener('click', () => {
-    projectsPage[1].scrollIntoView({ behavior: "smooth" });
-});
 
-arrowButton[4].addEventListener('click', () => {
+arrowButton[3].addEventListener('click', () => {
     contactPage.scrollIntoView({ behavior: "smooth" });
 });
 
-p1Link.addEventListener('click', () => {
-    window.location.href = 'https://popsipoll-project.netlify.app/';
-});
-
 liveViewLinks[0].addEventListener('click', () => {
-    window.location.href = 'https://popsipoll-project.netlify.app/';
-});
-
-gitLink[0].addEventListener('click', () => {
-    window.location.href = 'https://github.com/Cam-Fernanda-Melissa-Jake-Project4/popsipoll';
+    window.open('https://samsungfire.com/m/');
 });
 
 camLink.addEventListener('click', () => {
-    window.location.href = 'https://camduffin.com/';
+    window.open('https://camduffin.com/');
 });
 
 fernLink.addEventListener('click', () => {
-    window.location.href = 'https://ferncodes.com/';
+    window.open('https://ferncodes.com/');
 });
 
 melLink.addEventListener('click', () => {
-    window.location.href = 'https://melissalocquiao.com';
+    window.open('https://melissalocquiao.com');
 });
 
 jessLink.addEventListener('click', () => {
-    window.location.href = 'https://jessonthenet.com';
+    window.open('https://jessonthenet.com');
 });
 
-p2Link.addEventListener('click', () => {
-    window.location.href = 'https://donno-what-to-cook.netlify.app/';
-});
-
+//popsipoll link - live and git repo
 liveViewLinks[1].addEventListener('click', () => {
-    window.location.href = 'https://donno-what-to-cook.netlify.app/';
+    window.open('https://popsipoll-project.netlify.app/');
+});
+gitLink[0].addEventListener('click', () => {
+    window.open('https://github.com/Cam-Fernanda-Melissa-Jake-Project4/popsipoll');
 });
 
-gitLink[1].addEventListener('click', () => {
-    window.location.href = 'https://github.com/Jess-Jake/project2';
-});
 
-p3Link.addEventListener('click', () => {
-    window.location.href = 'https://travel-survey.netlify.app/';
-});
-
+//jake's travel link - live and git repo
 liveViewLinks[2].addEventListener('click', () => {
-    window.location.href = 'https://travel-survey.netlify.app/';
+    window.open('https://travel-survey.netlify.app/');
+});
+gitLink[1].addEventListener('click', () => {
+    window.open('https://github.com/jakejonggubaek/travel-survey-app-project3');
 });
 
-gitLink[2].addEventListener('click', () => {
-    window.location.href = 'https://github.com/jakejonggubaek/travel-survey-app-project3';
-});
-
-p4Link.addEventListener('click', () => {
-    window.location.href = 'https://team-to-do-manager.netlify.app/';
-});
-
+//random recipe link - live and git repo
 liveViewLinks[3].addEventListener('click', () => {
-    window.location.href = 'https://team-to-do-manager.netlify.app/';
+    window.open('https://donno-what-to-cook.netlify.app/');
+});
+gitLink[2].addEventListener('click', () => {
+    window.open('https://github.com/Jess-Jake/project2');
 });
 
-gitLink[3].addEventListener('click', () => {
-    window.location.href = 'https://github.com/jakejonggubaek/to-do-list-for-group-app-server';
+
+//to-do app link - live and git repo
+liveViewLinks[4].addEventListener('click', () => {
+    window.open('https://team-to-do-manager.netlify.app/');
 });
+gitLink[3].addEventListener('click', () => {
+    window.open('https://github.com/jakejonggubaek/to-do-list-for-group-app-server');
+});
+
+//korean sachal app link - live and git repo
+liveViewLinks[5].addEventListener('click', () => {
+    window.open('https://korean-sachal.netlify.app/');
+});
+gitLink[4].addEventListener('click', () => {
+    window.open('https://github.com/jakejonggubaek/boilerplate-webpack-react-less');
+});
+
+//project detail page open 
+for (let i = 0; i < projectBrief.length; i++) {
+
+    projectBrief[i].addEventListener('click', () => {
+        projectDetail[i].style.right = '0';
+    })
+    progectDetailClose[i].addEventListener('click', () => {
+        projectDetail[i].style.right = '-5000px';
+    })
+}
+
 
 async function handleSubmit(event) {
     event.preventDefault();
