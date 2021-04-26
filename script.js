@@ -109,10 +109,10 @@ gitLink[1].addEventListener('click', () => {
 
 //random recipe link - live and git repo
 liveViewLinks[3].addEventListener('click', () => {
-    window.open('https://donno-what-to-cook.netlify.app/');
+    window.open('https://random-recipe-jj.netlify.app/');
 });
 gitLink[2].addEventListener('click', () => {
-    window.open('https://github.com/Jess-Jake/project2');
+    window.open('https://github.com/Jess-Jake/randome-recipe-app');
 });
 
 
