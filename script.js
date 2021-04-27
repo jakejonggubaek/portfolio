@@ -92,7 +92,7 @@ jessLink.addEventListener('click', () => {
 
 //popsipoll link - live and git repo
 liveViewLinks[1].addEventListener('click', () => {
-    window.open('https://popsipoll-project.netlify.app/');
+    window.open('https://popsipoll.netlify.app/');
 });
 gitLink[0].addEventListener('click', () => {
     window.open('https://github.com/Cam-Fernanda-Melissa-Jake-Project4/popsipoll');
