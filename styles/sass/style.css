@@ -847,7 +847,6 @@ header .sub-header button:hover, header .sub-header button:focus {
 }
 
 .intro > div .contents p {
-  text-align: center;
   line-height: 1.5rem;
   padding: 0 10px;
 }
