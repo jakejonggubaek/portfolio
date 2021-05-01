@@ -3,6 +3,7 @@
 @import 'mixin';
 @import 'loading';
 
+//hide scroll bar
 ::-webkit-scrollbar {
     width: 0;
     background: transparent;
@@ -119,7 +120,7 @@ a, button {
     text-decoration: none;
 }
 
-//go to top button
+//go to the top button
 .topBtn {
     display: none; 
     position: fixed; 
@@ -134,10 +135,10 @@ a, button {
     padding: 10px;
     border-radius: 10px;
     font-size: $small;
-}
 
-.topBtn:hover {
-    opacity: 0.5;
+    &:hover, &:focus {
+        opacity: 0.5;
+    }
 }
 
 .wrapper {
@@ -226,6 +227,7 @@ header {
         }
     }
 
+    //resume button section
     .sub-header {
         display: flex;
         justify-content: center;
@@ -250,6 +252,7 @@ header {
     }    
 }
 
+//page down button
 .fa-chevron-down {
     font-size: $large;
     position: absolute;
@@ -458,6 +461,7 @@ header {
     }
 }
 
+//skills and education section (third page)
 .skills {
     position: relative;
     display: flex;
@@ -714,6 +718,7 @@ header {
     }
 }
 
+//project section (fourth page)
 .projects {
     position: relative;
     display: flex;
@@ -881,6 +886,7 @@ header {
         }
     }
 
+    //project detail pop up page
     .project-detail {
         position: absolute;
         display: flex;
@@ -1109,6 +1115,8 @@ header {
     }
 }
 
+
+//contact section (last page)
 .contact {
     position: relative;
     display: flex;

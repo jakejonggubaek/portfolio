@@ -1,9 +1,17 @@
+const body = document.querySelector('body');
+
+//each section page
 const loading = document.querySelector('.loading');
 const intro = document.querySelector('.intro'); 
 const skillsPage = document.querySelector('.skills');
 const projectsPage = document.querySelectorAll('.projects');
 const contactPage = document.querySelector('.contact');
+
+//page down arrow button
 const arrowButton = document.querySelectorAll('.fa-chevron-down');
+//go to the top button
+const topButton = document.querySelector('.topBtn');
+
 const liveViewLinks = document.querySelectorAll('.live-link');
 const gitLink = document.querySelectorAll('.git-repo');
 const camLink = document.querySelector('.cam');
@@ -13,25 +21,27 @@ const jessLink = document.querySelector('.jess');
 const samsungLink = document.querySelector('.samsung');
 const fcLink = document.querySelector('.flight-centre');
 const resumeLink = document.querySelector('.resume');
+
 const form = document.getElementById("my-form");
-const body = document.querySelector('body');
-const topButton = document.querySelector('.topBtn');
+
 const projectBrief= document.querySelectorAll('.project-brief');
 const projectDetail = document.querySelectorAll('.project-detail');
 const progectDetailClose = document.querySelectorAll('.close');
 
 //loading page
-setTimeout(() => { loading.style.display = 'none'}, 2000);
+setTimeout(() => { 
+    loading.style.display = 'none';
+    
+}, 2000);
 
+//show&hide go-to-the top button
 const screenScroll = () => {
-
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         topButton.style.display = "block";
     } else {
         topButton.style.display = "none";
     }
 }
-
 body.addEventListener("scroll", screenScroll);
 
 //scroll to top button - to landing page
@@ -64,7 +74,6 @@ arrowButton[1].addEventListener('click', () => {
 arrowButton[2].addEventListener('click', () => {
     projectsPage[0].scrollIntoView({ behavior: "smooth" });
 });
-
 
 arrowButton[3].addEventListener('click', () => {
     contactPage.scrollIntoView({ behavior: "smooth" });
@@ -132,7 +141,7 @@ gitLink[4].addEventListener('click', () => {
     window.open('https://github.com/jakejonggubaek/boilerplate-webpack-react-less');
 });
 
-//project detail page open 
+//project detail pop up page open 
 for (let i = 0; i < projectBrief.length; i++) {
 
     projectBrief[i].addEventListener('click', () => {
@@ -143,7 +152,7 @@ for (let i = 0; i < projectBrief.length; i++) {
     })
 }
 
-
+//contact form logic
 async function handleSubmit(event) {
     event.preventDefault();
     const data = new FormData(event.target);
