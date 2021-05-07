@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    
     font-family: $body;
     font-size: $small;
     scrollbar-width: none;
@@ -32,32 +33,32 @@ body {
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { filter: brightness(0%);}
+    to   { filter: brightness(100%); }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { filter: brightness(0%);}
+    to   { filter: brightness(100%); }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { filter: brightness(0%);}
+    to   { filter: brightness(100%); }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { filter: brightness(0%);}
+    to   { filter: brightness(100%); }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { filter: brightness(0%);}
+    to   { filter: brightness(100%); }
 }
 
 section:not(section:nth-of-type(1)) {
