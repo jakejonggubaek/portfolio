@@ -1090,6 +1090,10 @@ header .sub-header button:hover, header .sub-header button:focus {
   }
 }
 
+.landing .fa-chevron-down {
+  visibility: hidden;
+}
+
 .intro {
   position: relative;
   display: -webkit-box;

@@ -34,6 +34,11 @@ setTimeout(() => {
     
 }, 2000);
 
+setTimeout(() => {
+    arrowButton[0].style.visibility = 'visible';
+
+}, 7000);
+
 //show&hide go-to-the top button
 const screenScroll = () => {
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
