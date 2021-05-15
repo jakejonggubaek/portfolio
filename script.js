@@ -56,7 +56,7 @@ topButton.addEventListener('click', () => {
 });
 
 resumeLink.addEventListener('click', () => {
-    window.open('./assets/RESUME_JAKE_BAEK_2021.pdf');
+    window.open('./assets/RESUME_JAKE_BAEK.pdf');
 });
 
 samsungLink.addEventListener('click', () => {
