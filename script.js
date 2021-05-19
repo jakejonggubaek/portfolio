@@ -18,9 +18,9 @@ const camLink = document.querySelector('.cam');
 const fernLink = document.querySelector('.fern');
 const melLink = document.querySelector('.mel');
 const jessLink = document.querySelector('.jess');
-const samsungLink = document.querySelector('.samsung');
+// const samsungLink = document.querySelector('.samsung');
 // const fcLink = document.querySelector('.flight-centre');
-// const resumeLink = document.querySelector('.resume');
+const resumeLink = document.querySelector('.resume');
 
 const form = document.getElementById("my-form");
 
