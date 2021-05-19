@@ -135,7 +135,7 @@ liveViewLinks[4].addEventListener('click', () => {
     window.open('https://team-to-do-manager.netlify.app/');
 });
 gitLink[3].addEventListener('click', () => {
-    window.open('https://github.com/jakejonggubaek/to-do-list-for-group-app-server');
+    window.open('https://github.com/jakejonggubaek/to-do-list-for-group-app');
 });
 
 //korean sachal app link - live and git repo
