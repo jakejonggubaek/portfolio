@@ -19,8 +19,8 @@ const fernLink = document.querySelector('.fern');
 const melLink = document.querySelector('.mel');
 const jessLink = document.querySelector('.jess');
 const samsungLink = document.querySelector('.samsung');
-const fcLink = document.querySelector('.flight-centre');
-const resumeLink = document.querySelector('.resume');
+// const fcLink = document.querySelector('.flight-centre');
+// const resumeLink = document.querySelector('.resume');
 
 const form = document.getElementById("my-form");
 
@@ -59,13 +59,13 @@ resumeLink.addEventListener('click', () => {
     window.open('./assets/RESUME_JAKE_BAEK.pdf');
 });
 
-samsungLink.addEventListener('click', () => {
-    window.open('https://www.samsungsds.com/en/company/overview/about_comp_over.html');
-});
+// samsungLink.addEventListener('click', () => {
+//     window.open('https://www.samsungsds.com/en/company/overview/about_comp_over.html');
+// });
 
-fcLink.addEventListener('click', () => {
-    window.open('https://www.flightcentre.ca/destination/canada');
-});
+// fcLink.addEventListener('click', () => {
+//     window.open('https://www.flightcentre.ca/destination/canada');
+// });
 
 //arrow button to scroll down
 arrowButton[0].addEventListener('click', () => {
