@@ -139,12 +139,12 @@ gitLink[3].addEventListener('click', () => {
 });
 
 //korean sachal app link - live and git repo
-liveViewLinks[5].addEventListener('click', () => {
-    window.open('https://korean-sachal.netlify.app/');
-});
-gitLink[4].addEventListener('click', () => {
-    window.open('https://github.com/jakejonggubaek/boilerplate-webpack-react-less');
-});
+// liveViewLinks[5].addEventListener('click', () => {
+//     window.open('https://korean-sachal.netlify.app/');
+// });
+// gitLink[4].addEventListener('click', () => {
+//     window.open('https://github.com/jakejonggubaek/boilerplate-webpack-react-less');
+// });
 
 //project detail pop up page open 
 for (let i = 0; i < projectBrief.length; i++) {
