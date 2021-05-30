@@ -28,6 +28,20 @@ const projectBrief= document.querySelectorAll('.project-brief');
 const projectDetail = document.querySelectorAll('.project-detail');
 const progectDetailClose = document.querySelectorAll('.close');
 
+//scroll effect
+
+window.addEventListener("scroll", () => {
+    console.log('scroll');
+    const currentScroll = window.pageYOffset;
+    console.log(currentScroll);
+    // if (currentScroll <= checkpoint) {
+    //     opacity = 1 - currentScroll / checkpoint;
+    // } else {
+    //     opacity = 0;
+    // }
+    // document.querySelector(".front").style.opacity = opacity;
+});
+
 //loading page
 setTimeout(() => { 
     loading.style.display = 'none';
@@ -39,8 +53,41 @@ setTimeout(() => {
 
 }, 7000);
 
-//show&hide go-to-the top button
+//show&hide go-to-the top button & scroll effect
 const screenScroll = () => {
+
+    const checkpoint = window.innerHeight;
+    const currentScroll = document.body.scrollTop;
+
+    if (currentScroll <= checkpoint * 1.5) {
+        opacity = currentScroll / checkpoint;
+    } else {
+        opacity = 0.3;
+    }
+
+    if (currentScroll <= checkpoint * 2.5) {
+        opacityB = currentScroll / (checkpoint * 2);
+    } else {
+        opacityB = 0.3;
+    }
+
+    if (currentScroll <= checkpoint * 3.5) {
+        opacityC = currentScroll / (checkpoint * 3);
+    } else {
+        opacityC = 0.3;
+    }
+
+    if (currentScroll <= checkpoint * 4.5) {
+        opacityD = currentScroll / (checkpoint * 4);
+    } else {
+        opacityD = 0.3;
+    }
+    intro.style.opacity = opacity;
+    skillsPage.style.opacity = opacityB;
+    projectsPage[0].style.opacity = opacityC;
+    contactPage.style.opacity = opacityD;
+
+
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         topButton.style.display = "block";
     } else {
