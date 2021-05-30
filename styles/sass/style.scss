@@ -24,7 +24,7 @@ body {
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     -webkit-animation: fadein 2s linear 1.8s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s linear 1.8s; /* Firefox < 16 */
     -ms-animation: fadein 2s linear 1.8s; /* Internet Explorer */
@@ -79,6 +79,7 @@ section {
     width: 100%;
     height: 100vh;
     transition: opacity 2s;
+    border-bottom: 2px solid black;
 }
 
 h1 {
@@ -192,9 +193,18 @@ header {
 
             ul {
                 display: flex;
+                font-size: $small-medium;
+
+                @include labTopMQ {
+                    font-size: $small;
+                }
 
                 li {
-                    padding: 20px;
+                    padding: 30px;
+
+                    @include labTopMQ {
+                        padding: 20px;
+                    }
 
                     @include tabletMQ {
                         padding: 15px;
@@ -234,7 +244,7 @@ header {
     //resume button section
     .sub-header {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         width: 22.5%;
         height: 100%;
@@ -304,6 +314,13 @@ header {
         align-items: center;
 
         h1 {
+
+            font-size: $xx-large;
+
+            @include labTopMQ {
+                font-size: $x-large;
+            }
+
             @include mobileMQ {
                 font-size: $medium;
             }
@@ -314,6 +331,8 @@ header {
         }
 
         p {
+            margin: 10px;
+            font-size: $small-medium;
             text-align: center;
         }
 
@@ -394,20 +413,27 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40%;
+            width: 30%;
 
             @include mobileMQ {
                 width: 100%;
             }
 
            .profile-image {
-                width: 150px;
-                height: 172px;
+               border-radius: 10px;
+                width: 250px;
+                height: 287px;
                 margin: 8px;
 
+                @include labTopMQ {
+                    width: 180px;
+                    height: 220px;
+                    margin: 6px;
+                }
+
                 @include smallTabletMQ {
-                    width: 100px;
-                    height: 115px;
+                    width: 120px;
+                    height: 135px;
                     margin: 6px;
                 }
            }
@@ -535,12 +561,17 @@ header {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 70px;
-                    height: 75px;
+                    width: 75px;
+                    height: 80px;
                     background-color: $white;
                     border-radius: 10px;
                     border: 2px solid $white;
                     margin: 10px;
+
+                    @include labTopMQ {
+                        width: 70px;
+                        height: 75px;
+                    }
 
                     @include tabletMQ {
                         font-size: $x-small;
@@ -578,6 +609,7 @@ header {
 
                 span {
                     font-size: $x-small;
+                    text-align: center;
                 }
 
                 .symbol-container1:hover .jquery-symbol, .symbol-container1:focus .jquery-symbol {
@@ -1142,15 +1174,21 @@ header {
     }
 
     .content-container {
-        width: 30%;
+        width: 35%;
         color: $white;
-        padding: 0 10px;
+        padding: 0;
+        padding-left: 15%;
+
+        @include tabletMQ {
+            padding-left: 20px;
+        }
 
         @include mobileMQ {
             width: 90%;
         }
             
         ul {
+            padding: 0;
             display: flex;
 
             i {
@@ -1167,12 +1205,16 @@ header {
 
     form {
         display: flex;
-        width: 70%;
+        width: 65%;
         padding: 0 10%;
         flex-direction: column;
 
         @include mobileMQ {
             width: 90%;
+        }
+
+        input {
+            padding-left: 5px;
         }
 
         .name, .email {
@@ -1184,7 +1226,6 @@ header {
 
         .msg {
             width: 100%;
-            padding: 0;
             height: 200px;
             margin: 10px 0 ;
             background-color: $white;

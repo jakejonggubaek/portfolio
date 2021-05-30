@@ -1,3 +1,9 @@
+@mixin labTopMQ {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}
+
 @mixin tabletMQ {
   @media (max-width: 1200px) {
     @content;

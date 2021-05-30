@@ -662,8 +662,8 @@ body {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   -webkit-animation: fadein 2s linear 1.8s;
   /* Safari, Chrome and Opera > 12.1 */
   /* Firefox < 16 */
@@ -719,6 +719,7 @@ section {
   height: 100vh;
   -webkit-transition: opacity 2s;
   transition: opacity 2s;
+  border-bottom: 2px solid black;
 }
 
 h1 {
@@ -864,10 +865,23 @@ header .main-header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1500px) {
+  header .main-header nav ul {
+    font-size: 1rem;
+  }
 }
 
 header .main-header nav ul li {
-  padding: 20px;
+  padding: 30px;
+}
+
+@media (max-width: 1500px) {
+  header .main-header nav ul li {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -909,9 +923,9 @@ header .sub-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1011,6 +1025,16 @@ header .sub-header button:hover, header .sub-header button:focus {
           align-items: center;
 }
 
+.landing .landing-details h1 {
+  font-size: 4rem;
+}
+
+@media (max-width: 1500px) {
+  .landing .landing-details h1 {
+    font-size: 3.5rem;
+  }
+}
+
 @media (max-width: 600px) {
   .landing .landing-details h1 {
     font-size: 2rem;
@@ -1022,6 +1046,8 @@ header .sub-header button:hover, header .sub-header button:focus {
 }
 
 .landing .landing-details p {
+  margin: 10px;
+  font-size: 1.25rem;
   text-align: center;
 }
 
@@ -1138,7 +1164,7 @@ header .sub-header button:hover, header .sub-header button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40%;
+  width: 30%;
 }
 
 @media (max-width: 600px) {
@@ -1148,15 +1174,24 @@ header .sub-header button:hover, header .sub-header button:focus {
 }
 
 .intro > div .image-container .profile-image {
-  width: 150px;
-  height: 172px;
+  border-radius: 10px;
+  width: 250px;
+  height: 287px;
   margin: 8px;
+}
+
+@media (max-width: 1500px) {
+  .intro > div .image-container .profile-image {
+    width: 180px;
+    height: 220px;
+    margin: 6px;
+  }
 }
 
 @media (max-width: 900px) {
   .intro > div .image-container .profile-image {
-    width: 100px;
-    height: 115px;
+    width: 120px;
+    height: 135px;
     margin: 6px;
   }
 }
@@ -1352,12 +1387,19 @@ header .sub-header button:hover, header .sub-header button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70px;
-  height: 75px;
+  width: 75px;
+  height: 80px;
   background-color: white;
   border-radius: 10px;
   border: 2px solid white;
   margin: 10px;
+}
+
+@media (max-width: 1500px) {
+  .skills > div .symbols .img-symbols > div {
+    width: 70px;
+    height: 75px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1402,6 +1444,7 @@ header .sub-header button:hover, header .sub-header button:focus {
 
 .skills > div .symbols .img-symbols span {
   font-size: 0.85rem;
+  text-align: center;
 }
 
 .skills > div .symbols .img-symbols .symbol-container1:hover .jquery-symbol, .skills > div .symbols .img-symbols .symbol-container1:focus .jquery-symbol {
@@ -2144,9 +2187,16 @@ header .sub-header button:hover, header .sub-header button:focus {
 }
 
 .contact .content-container {
-  width: 30%;
+  width: 35%;
   color: white;
-  padding: 0 10px;
+  padding: 0;
+  padding-left: 15%;
+}
+
+@media (max-width: 1200px) {
+  .contact .content-container {
+    padding-left: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2156,6 +2206,7 @@ header .sub-header button:hover, header .sub-header button:focus {
 }
 
 .contact .content-container ul {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2175,7 +2226,7 @@ header .sub-header button:hover, header .sub-header button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  width: 65%;
   padding: 0 10%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2189,6 +2240,10 @@ header .sub-header button:hover, header .sub-header button:focus {
   }
 }
 
+.contact form input {
+  padding-left: 5px;
+}
+
 .contact form .name, .contact form .email {
   width: 100%;
   height: 40px;
@@ -2198,7 +2253,6 @@ header .sub-header button:hover, header .sub-header button:focus {
 
 .contact form .msg {
   width: 100%;
-  padding: 0;
   height: 200px;
   margin: 10px 0;
   background-color: white;
