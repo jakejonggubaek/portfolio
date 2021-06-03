@@ -24,7 +24,7 @@ body {
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     -webkit-animation: fadein 2s linear 1.8s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s linear 1.8s; /* Firefox < 16 */
     -ms-animation: fadein 2s linear 1.8s; /* Internet Explorer */
