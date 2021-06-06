@@ -132,7 +132,11 @@ arrowButton[3].addEventListener('click', () => {
 });
 
 liveViewLinks[0].addEventListener('click', () => {
-    window.open('https://samsungfire.com/m/');
+    window.open('https://jake-and-travel.netlify.app/');
+});
+
+gitLink[0].addEventListener('click', () => {
+    window.open('https://github.com/jakejonggubaek/react-jake-and-travel');
 });
 
 camLink.addEventListener('click', () => {
@@ -155,16 +159,16 @@ jessLink.addEventListener('click', () => {
 liveViewLinks[1].addEventListener('click', () => {
     window.open('https://popsipoll.netlify.app/');
 });
-gitLink[0].addEventListener('click', () => {
+
+gitLink[1].addEventListener('click', () => {
     window.open('https://github.com/Cam-Fernanda-Melissa-Jake-Project4/popsipoll');
 });
-
 
 //jake's travel link - live and git repo
 liveViewLinks[2].addEventListener('click', () => {
     window.open('https://travel-survey.netlify.app/');
 });
-gitLink[1].addEventListener('click', () => {
+gitLink[2].addEventListener('click', () => {
     window.open('https://github.com/jakejonggubaek/travel-survey-app-project3');
 });
 
@@ -172,7 +176,7 @@ gitLink[1].addEventListener('click', () => {
 liveViewLinks[3].addEventListener('click', () => {
     window.open('https://random-recipe-jj.netlify.app/');
 });
-gitLink[2].addEventListener('click', () => {
+gitLink[3].addEventListener('click', () => {
     window.open('https://github.com/Jess-Jake/randome-recipe-app');
 });
 
@@ -181,8 +185,12 @@ gitLink[2].addEventListener('click', () => {
 liveViewLinks[4].addEventListener('click', () => {
     window.open('https://team-to-do-manager.netlify.app/');
 });
-gitLink[3].addEventListener('click', () => {
+gitLink[4].addEventListener('click', () => {
     window.open('https://github.com/jakejonggubaek/to-do-list-for-group-app');
+});
+
+liveViewLinks[5].addEventListener('click', () => {
+    window.open('https://samsungfire.com/m/');
 });
 
 //korean sachal app link - live and git repo
